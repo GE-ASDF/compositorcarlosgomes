@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+header, nav, ul, li{
+    display: flex;
+}
+header{
+    background-color: #000025;
+    width: 100%;
+    height: 100px;
+    position:fixed;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+    z-index: 999;
+}
+header nav, h2, ul li{
+    padding:20px;
+}
+header nav ul li a{
+    display: block;
+    text-decoration: none;
+    color:white;
+}
+.introducao{
+    display: flex;
+    background-image:linear-gradient(transparent, rgba(105,105,105,.8)), url('../images/download.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y:100%;
+    background-position-x: center;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height:720px;
+    margin-top:calc(100px - 0.75%);
+}
+.conteudo-introducao{
+    max-width: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:#fff;
+}
+.conteudo-introducao figure{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    height: 150%;
+    position: relative;
+}
+figcaption{
+    width: 100vw;
+    color:black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.conteudo-introducao p{
+    font-size: 24px;
+    font-family:'Charm', cursive, Verdana, Geneva, Tahoma, sans-serif ;
+}
+.conteudo-introducao figure img{
+    border-radius: 50%;
+    width: 100%;
+    max-width: 100%;
+}
+.conteudo-introducao h2{
+    font-family: 'Calligraffitti', cursive, Arial, Helvetica, sans-serif;
+    font-size: 36px;
+}
+
+
+@media (min-width:281px) and (max-width:1056px){
+    header nav ul{
+        display: none;
+    }
+    header{
+        width: 100%;
+        z-index: 999;
+    }
+    .introducao{
+        width: 100%;
+        background-size: cover;
+    }
+    .menuMobile{
+        width: 60px;
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .div_1, .div_2, .div_3{
+        width: 100%;
+        height: 3px;
+        background-color: white;
+    }
+    header nav ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        top:100px;     
+        color:black;
+        background-color: white;
+        height: 280px;
+        width: 100%;
+
+    }
+    .introducao{
+        width: 100%;
+        flex-direction: column;
+    }
+    .conteudo-introducao{
+        flex-direction: column;
+        text-align: center;
+    }
+    header nav ul li{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding:0;
+    }
+    header nav ul li a{
+        z-index: 999;
+        display: inline-block;
+        color:black;
+        height: 50px;
+        padding:0;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        line-height: 50px;
+    }
+    .conteudo-introducao figure{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+        position: relative;
+    }
+   
+    
+}
+@media (min-width:240px) and (max-width:280px){
+    header{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+   
+    header nav ul{
+        display: none;
+    }
+    header h2{
+        font-size:16px;
+    }
+    header{
+        width: 100%;
+
+    }
+    .menuMobile{
+        width: 60px;
+        height: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+    .div_1, .div_2, .div_3{
+        width: 100%;
+        height: 3px;
+        background-color: white;
+    }
+    header nav ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        top:100px;
+        color:black;
+        background-color: white;
+        width: 100%;
+    }
+    header nav{
+        margin-top:0;
+    }
+    .introducao{
+        width: 100%;
+        flex-direction: column;
+    }
+    .conteudo-introducao{
+        flex-direction: column;
+        text-align: center;
+    }
+    header nav ul li{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding:0;
+    }
+    .conteudo-introducao figure{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    header nav ul li a{
+        z-index: 999;
+        display: inline-block;
+        color:black;
+        height: 50px;
+        padding:0;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        line-height: 50px;
+    }
+    .conteudo-introducao img{
+        width: 50%;
+    }
+}
+
+
+@media (min-width:2559px){
+    header{
+        width: 100%;
+        z-index: 999;
+    }
+    .introducao{
+        width: 100%;
+    }
+    .conteudo-introducao{
+        width: 50%;
+        flex-direction: row;
+    }
+    .conteudo-introducao figure{
+        width:30%;
+    }
+}
+.menuMobile{
+    cursor: pointer;
+}
+.isOpen{
+    display: flex;
+}
